@@ -29,7 +29,7 @@ triodenovo SHP2.vcf $PED > SHPTd2.txt
 dnmfilter SHPTd2.txt $PED $BAMLIST > SHPDn2.txt
 
 # foramtting for denovofilter (this family file has no header, add by yourself
-DenovofilterFormat.sh SHP2.vcf $PED SHPDfS2G.txt SHPDfI2G.txt SHPDfF.txt
+Format_for_denovofilter.sh SHP2.vcf $PED SHPDfS2G.txt SHPDfI2G.txt SHPDfF.txt
 
 # denovofilter anlaysis of SHPDfS2G.txt SHPDfI2G.txt by python
 # follow github.com/jeremymcrae/denovoFilter
