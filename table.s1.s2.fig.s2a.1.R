@@ -27,7 +27,7 @@ $VCFTOOLS --vcf vs.vcf --out vsn --bed $NMD_NEG_BED --recode --recode-INFO-all
 less $EXAC|awk -F"\t" 'BEGIN{OFS="\t"}$1 ~ /^#/{print $0}$1 !~ /^#/ && $7=="PASS"{$8=".";print $0}' > e1.vcf
 $BCFTOOLS norm -m -any -f $REF e1.vcf > e2.vcf
 
-#
+## from here, in R ##
 library(tidyverse)
 VCF_PATH="vs.vcf"
 VCF.NMD.NEG_PATH="vsn.recode.vcf"
