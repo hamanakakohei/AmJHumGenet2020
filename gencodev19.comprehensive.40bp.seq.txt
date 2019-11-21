@@ -1,0 +1,24 @@
+# too big, showing the first several lines
+>hg19_wgEncodeGencodeCompV19_ENST00000237247.6_0 range=chr1:66999026-66999130 5'pad=40 3'pad=40 strand=+ repeatMasking=none
+tttccagcctcccgccccagaaacgatctcgagcgttgccagtttgattc
+cagagccccactcgggtgggttcttttgtttctttgttttaatgacagtt
+cccag
+>hg19_wgEncodeGencodeCompV19_ENST00000237247.6_1 range=chr1:66999889-67000091 5'pad=40 3'pad=40 strand=+ repeatMasking=none
+tgtcttttggcttaacacttatctcctttggctttgacagcggacggaat
+agacctcagcagcggcgtggtgaggacttagctgggacctggaatcgtat
+cctcctgtgttttttcagactccttggaaattaaggaatgcaattctgcc
+accatgatggaaggtaggatgctttctgctatggttgactggcttcaggc
+aag
+>hg19_wgEncodeGencodeCompV19_ENST00000237247.6_2 range=chr1:67091490-67091633 5'pad=40 3'pad=40 strand=+ repeatMasking=none
+ttgctgagagagtttttgaccctttgctgttttcccacaggattgaaaaa
+acgtacaaggaaggcctttggaatacggaagaaagaaaaggacactgatt
+ctacgtatgtactttaggagtttgcctcctcgaagaagctattt
+>hg19_wgEncodeGencodeCompV19_ENST00000237247.6_3 range=chr1:67098713-67098817 5'pad=40 3'pad=40 strand=+ repeatMasking=none
+attccttatcataatagctatcaatttctttttgttacagaggttcacca
+gatagagatggaattgtaagtatttaaataaccatttttactgagtttgt
+gcttc
+>hg19_wgEncodeGencodeCompV19_ENST00000237247.6_4 range=chr1:67099723-67099886 5'pad=40 3'pad=40 strand=+ repeatMasking=none
+atcagacattgggtaacactataatcaaggctctattcagcaggggaaaa
+aaaagacccagaagactcagcttctcctcacctcttgcttctggctcaga
+gccctctcgttaactctgtctcaggtactctctgcttctgtgtctcttct
+ttgcttccggcttg
