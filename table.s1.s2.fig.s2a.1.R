@@ -22,7 +22,6 @@ cat chr.txt|while read CHR; do ${FUNCTION}SequenceToAllVariant2.R seq_canonical.
 cat tmpchr*|sort -u > v.vcf
 $SNPEFF -v -onlyProtein -canon GRCh37.75 v.vcf > vs.vcf 2> log.txt
 $VCFTOOLS --vcf vs.vcf --out vsn --bed $NMD_NEG_BED --recode --recode-INFO-all
-#${FUNCTION}ForMultiAnnoNorm.sh vs.vcf MULTIPLE > vsn.vcf
 
 # exac data
 less $EXAC|awk -F"\t" 'BEGIN{OFS="\t"}$1 ~ /^#/{print $0}$1 !~ /^#/ && $7=="PASS"{$8=".";print $0}' > e1.vcf
