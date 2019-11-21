@@ -1,3 +1,4 @@
+## shell script ##
 # compile
 gcc-4.9.4/bin/g++ -std=c++11  -I /usr/local/genome/boost-1.67.0/include -o sim PTV_count_simulations.cpp
 
@@ -7,8 +8,9 @@ mut_ary=(3.16e-7 1.00e-7 3.16e-8 1.00e-8 3.16e-9 1.00e-9 3.16e-10)
 for var in ${var_ary[@]}; do for mut in ${mut_ary[@]}; do
     ./sim $mut $var 0 0 1000 0 100000 > s0_h0_mut${mut}_var${var}.txt; done; done
 
-# draw figure (fig.s1) in R
-source("/betelgeuse01/analysis/hamanaka/function/ggplot_setting.R")
+## from here, R ##
+# draw figure (fig.s1)
+source("function/ggplot_setting.R")
 library(tidyverse)
 library(cowplot)
 var_ary=c("1.00e+01","3.16e+01","1.00e+02","3.16e+02","1.00e+03")
