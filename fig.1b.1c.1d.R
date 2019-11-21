@@ -29,10 +29,10 @@ readRDS("exhaustive.vcf.rds") %>%
     mutate(
         depth.v4=if_else(depth.v4>40,40,depth.v4),
         depth.v5=if_else(depth.v5>40,40,depth.v5),
-        depth.v6=if_else(depth.v6>40,40,depth.v6)) %>% # saveRDS("tmp1017.rds") (>40 wo 40 ni shiteru
+        depth.v6=if_else(depth.v6>40,40,depth.v6)) %>% 
     mutate(rate.adj.for.346trio=16*2*mut.rate*depth.v4/40+196*2*mut.rate*depth.v5/40+134*2*mut.rate*depth.v6/40,
         rate.adj.for.1330trio=121*2*mut.rate*depth.v4/40+886*2*mut.rate*depth.v5/40+323*2*mut.rate*depth.v6/40) %>%
-    group_by(enst,mod,nmd.neg) %>% #nmd.neg tuketashi
+    group_by(enst,mod,nmd.neg) %>% 
     summarise(
         rate.adj.346trio.total=sum(rate.adj.for.346trio),
         rate.adj.1330trio.total=sum(rate.adj.for.1330trio)) %>%
